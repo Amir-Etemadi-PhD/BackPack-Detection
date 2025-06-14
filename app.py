@@ -13,22 +13,17 @@ torch.classes.__path__ = types.SimpleNamespace(_path=[])
 st.set_page_config(page_title="Backpack Detector", layout="centered")
 st.title("🎒 Backpack Detection with YOLOv5")
 
-## Load model
-# @st.cache_resource
-# def load_model():
-#     yolov5_path = Path(__file__).parent / 'yolov5'
-#     sys.path.append(str(yolov5_path))
-#     from models.common import DetectMultiBackend
-#     weights = yolov5_path / 'runs' / 'train' / 'debug-test' / 'weights' / 'best.pt'
-#     model = DetectMultiBackend(str(weights), device='cpu')
-#     return model
-
-# Load model from root directory
+# Load model
 @st.cache_resource
 def load_model():
+    yolov5_path = Path(__file__).parent / 'yolov5'
+    sys.path.append(str(yolov5_path))
     from models.common import DetectMultiBackend
-    model = DetectMultiBackend('best_linux.pt', device='cpu')
+    weights = yolov5_path / 'runs' / 'train' / 'debug-test' / 'weights' / 'best.pt'
+    model = DetectMultiBackend(str(weights), device='cpu')
     return model
+
+
 
 # Load NMS utility
 yolov5_path = Path(__file__).parent / 'yolov5'
