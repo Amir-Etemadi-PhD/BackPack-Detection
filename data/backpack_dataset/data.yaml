@@ -1,0 +1,13 @@
+train: ../data/backpack_dataset/train/images
+val: ../data/backpack_dataset/valid/images
+test: ../data/backpack_dataset/test/images
+
+nc: 1
+names: ['backpack']
+
+roboflow:
+  workspace: test-u1nbw
+  project: test2-pslwy
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/test-u1nbw/test2-pslwy/dataset/1

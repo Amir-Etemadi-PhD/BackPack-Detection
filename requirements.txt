@@ -1,0 +1,34 @@
+altair
+matplotlib
+numpy
+opencv-python
+pandas
+pillow
+pyarrow
+scipy
+seaborn
+shap
+streamlit
+statsmodels
+torch
+ultralytics-thop
+# Needed for YOLOv5 utils
+PyYAML
+tqdm
+# Prevent import errors with torchvision models
+torchvision
+
+# altair
+# matplotlib
+# numpy
+# opencv-python
+# pandas
+# pillow
+# pyarrow
+# scipy
+# seaborn
+# shap
+# streamlit
+# statsmodels
+# torch
+# ultralytics-thop
