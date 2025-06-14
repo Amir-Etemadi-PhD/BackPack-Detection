@@ -3,7 +3,6 @@ __pycache__/
 .env
 *.DS_Store
 *.log
-yolov5/runs/
-!yolov5/runs/train/debug-test/weights/best.pt
+
 
 
