@@ -7,7 +7,7 @@ from pathlib import Path
 import types
 
 # Fix for torch.classes error in Streamlit
-torch.classes.__path__ = types.SimpleNamespace(_path=[])
+#torch.classes.__path__ = types.SimpleNamespace(_path=[])
 
 # Set YOLOv5 path and make modules importable
 yolov5_path = Path(__file__).parent / 'yolov5'
