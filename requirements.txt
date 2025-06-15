@@ -18,7 +18,9 @@ tqdm
 # Prevent import errors with torchvision models
 torchvision
 opencv-python-headless
-
+streamlit
+torch
+numpy
 # altair
 # matplotlib
 # numpy
