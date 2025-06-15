@@ -24,7 +24,7 @@ st.title("🎒 Backpack Detection with YOLOv5")
 # Load model from weights-only checkpoint
 @st.cache_resource
 def load_model():
-    model_path = "yolov5/runs/train/debug-test/weights/best.torchscript"
+    model_path = "models/best.torchscript"
     model = torch.jit.load(model_path, map_location="cpu")
     model.eval()
     return model
