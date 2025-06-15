@@ -1,7 +1,7 @@
 altair
 matplotlib
 numpy
-opencv-python
+opencv-python-headless
 pandas
 pillow
 pyarrow
@@ -17,6 +17,7 @@ PyYAML
 tqdm
 # Prevent import errors with torchvision models
 torchvision
+opencv-python-headless
 
 # altair
 # matplotlib
